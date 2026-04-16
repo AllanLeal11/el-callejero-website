@@ -65,15 +65,13 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-slide-up animation-delay-600">
-            <a
-              href={socialLinks.menuLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={scrollToMenu}
               className="group relative bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-2xl w-full sm:w-auto"
             >
               <span className="relative z-10">Ver Menú Completo</span>
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
+            </button>
             
             <a
               href={socialLinks.pedidosya}
