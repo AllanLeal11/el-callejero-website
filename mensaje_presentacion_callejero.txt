@@ -1,0 +1,19 @@
+MENSAJE DE PRESENTACIÓN - EL CALLEJERO
+========================================
+
+Hola buenas noches, me presento, mi nombre es Allan Leal Quintanilla, soy desarrollador web freelance con base aquí en Liberia, Guanacaste. He tenido la oportunidad de conocer El Callejero y su concepto de street food gourmet, y me parece que tienen un negocio con mucho potencial para crecer en el mundo digital.
+
+Tomé la iniciativa de crear una demo de página web profesional para El Callejero como presentación de mi trabajo. Acá se las comparto:
+
+🌐 Demo: https://frontend-production-00ed2.up.railway.app
+
+La página incluye un diseño moderno y atractivo con menú digital, sección de ubicación, integración con redes sociales y está optimizada para celular, que es donde la mayoría de clientes buscan dónde comer.
+
+Además les adjunto una propuesta formal con todos los detalles y precios. Estoy completamente abierto a conversar y ajustar lo que necesiten.
+
+Quedo atento a cualquier consulta, sin ningún compromiso.
+
+Saludos cordiales,
+Allan Leal Quintanilla
+📧 allanleal65@gmail.com
+📱 +506 8751 8055
