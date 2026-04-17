@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta - El Callejero</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            line-height: 1.7;
+            background: #fff;
+        }
+        
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 50px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #1a1a1a;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .header p {
+            font-size: 13px;
+            color: #555;
+            margin-top: 4px;
+        }
+        
+        /* Title Section */
+        .title-section {
+            text-align: center;
+            margin: 50px 0 40px;
+        }
+        
+        .title-section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        .title-section h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d97706;
+        }
+        
+        .title-section h4 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        /* Divider */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #d97706;
+            margin: 30px auto;
+        }
+        
+        /* Body text */
+        .intro {
+            font-size: 14.5px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .intro strong {
+            color: #1a1a1a;
+        }
+        
+        /* Section headers */
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            color: #1a1a1a;
+        }
+        
+        /* Bullet list */
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefits-list li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            font-size: 14.5px;
+            color: #333;
+        }
+        
+        .benefits-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d97706;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        
+        .benefits-list li strong {
+            color: #1a1a1a;
+        }
+        
+        /* Features list */
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14.5px;
+            color: #333;
+        }
+        
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .features-list li strong {
+            color: #1a1a1a;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        /* Table */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 10px;
+            font-size: 14px;
+        }
+        
+        .price-table thead th {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .price-table thead th:last-child {
+            text-align: right;
+        }
+        
+        .price-table tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #eee;
+            color: #333;
+        }
+        
+        .price-table tbody td:last-child {
+            text-align: right;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        
+        .price-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .price-table .included {
+            color: #16a34a;
+            font-weight: 600;
+        }
+        
+        .price-table .total-row td {
+            background: #f8f8f8;
+            font-weight: 700;
+            font-size: 15px;
+            border-top: 2px solid #1a1a1a;
+            color: #1a1a1a;
+        }
+        
+        .note {
+            font-size: 13px;
+            color: #777;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        /* Demo link */
+        .demo-box {
+            background: #fffbeb;
+            border: 1px solid #d97706;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .demo-box p {
+            font-size: 14px;
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+        
+        .demo-box a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #d97706;
+            text-decoration: none;
+        }
+        
+        /* Closing */
+        .closing {
+            margin-top: 40px;
+            font-size: 14.5px;
+            color: #333;
+        }
+        
+        .signature {
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+        
+        .signature .name {
+            font-weight: 700;
+            font-size: 15px;
+            color: #1a1a1a;
+        }
+        
+        .signature p {
+            font-size: 13px;
+            color: #555;
+        }
+        
+        /* Print styles */
+        @media print {
+            body { background: #fff; }
+            .page { padding: 40px 30px; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <div class="header">
+            <h1>Allan Leal Quintanilla</h1>
+            <p>Desarrollador Web Freelance - Liberia, Guanacaste, Costa Rica</p>
+            <p>allanleal65@gmail.com &bull; +506 8751 8055</p>
+        </div>
+
+        <!-- Title -->
+        <div class="title-section">
+            <h2>Propuesta de Actualizaci&oacute;n Web</h2>
+            <h3>El Callejero</h3>
+            <h4>Street Food Gourmet</h4>
+        </div>
+        
+        <div class="divider"></div>
+
+        <!-- Intro -->
+        <p class="intro">
+            <strong>Estimado equipo de El Callejero,</strong><br><br>
+            Mi nombre es Allan Leal Quintanilla, soy desarrollador web freelance con base aqu&iacute; en Liberia, Guanacaste. He tenido la oportunidad de conocer su negocio y revisar su presencia en l&iacute;nea actual. El Callejero tiene una identidad gastron&oacute;mica muy fuerte y un concepto de street food gourmet que merece una plataforma digital a la altura.
+            <br><br>
+            La propuesta que les presento busca <strong>potenciar su presencia digital</strong>: actualizar, mejorar y a&ntilde;adir funcionalidades que conviertan su sitio web en una herramienta real de negocio, trabajando para El Callejero las 24 horas del d&iacute;a.
+        </p>
+
+        <!-- Why now -->
+        <h3 class="section-title">&iquest;Por qu&eacute; actualizar ahora?</h3>
+        <ul class="benefits-list">
+            <li><strong>Los clientes buscan desde el celular.</strong> Un sitio r&aacute;pido y bien optimizado para m&oacute;vil convierte b&uacute;squedas en pedidos reales.</li>
+            <li><strong>Mayor visibilidad en Google.</strong> Mejoras t&eacute;cnicas en SEO pueden multiplicar los resultados de b&uacute;squeda sin esfuerzo adicional.</li>
+            <li><strong>M&aacute;s conversiones.</strong> Funciones como WhatsApp directo, men&uacute; digital y pedidos en l&iacute;nea convierten visitantes en clientes.</li>
+            <li><strong>Competencia digital.</strong> Los restaurantes que invierten en su presencia web capturan al cliente antes de que salga de su casa.</li>
+        </ul>
+
+        <!-- What's included -->
+        <h3 class="section-title">&iquest;Qu&eacute; incluye la actualizaci&oacute;n?</h3>
+        <ul class="features-list">
+            <li>
+                <strong>Dise&ntilde;o web profesional y moderno</strong>
+                Sitio completamente redise&ntilde;ado con im&aacute;genes de alta calidad, carrusel hero animado, navegaci&oacute;n fluida y dise&ntilde;o responsivo optimizado para m&oacute;vil y escritorio.
+            </li>
+            <li>
+                <strong>Men&uacute; digital interactivo</strong>
+                Secci&oacute;n de men&uacute; con categor&iacute;as (Platos Fuertes, Entradas, Bebidas, Postres), im&aacute;genes de cada platillo, descripciones y precios actualizados.
+            </li>
+            <li>
+                <strong>SEO Local optimizado</strong>
+                Optimizaci&oacute;n para que El Callejero aparezca en las b&uacute;squedas de Google para &ldquo;comida en Liberia&rdquo;, &ldquo;restaurantes Guanacaste&rdquo; y t&eacute;rminos similares.
+            </li>
+            <li>
+                <strong>Integraci&oacute;n WhatsApp directa</strong>
+                Bot&oacute;n de contacto r&aacute;pido vinculado al n&uacute;mero del negocio para pedidos y consultas inmediatas.
+            </li>
+            <li>
+                <strong>Secci&oacute;n de ubicaci&oacute;n con mapa</strong>
+                Mapa interactivo de Google Maps integrado, horarios de atenci&oacute;n y direcci&oacute;n exacta para que los clientes lleguen f&aacute;cilmente.
+            </li>
+            <li>
+                <strong>Integraci&oacute;n con redes sociales</strong>
+                Vinculaci&oacute;n con Instagram, Facebook y plataformas de delivery (PedidosYa) para llevar tr&aacute;fico entre plataformas.
+            </li>
+            <li>
+                <strong>Galer&iacute;a de fotos del local</strong>
+                Dise&ntilde;o visual atractivo para mostrar el ambiente, los platillos y la experiencia de El Callejero.
+            </li>
+            <li>
+                <strong>Formulario de contacto</strong>
+                Para eventos privados, catering o consultas directas desde el sitio.
+            </li>
+        </ul>
+
+        <!-- Demo -->
+        <div class="demo-box">
+            <p>He preparado una demo funcional del sitio como presentaci&oacute;n:</p>
+            <a href="https://frontend-production-00ed2.up.railway.app" target="_blank">frontend-production-00ed2.up.railway.app</a>
+        </div>
+
+        <!-- Price table -->
+        <h3 class="section-title">Proforma &mdash; Inversi&oacute;n estimada</h3>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripci&oacute;n</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Dise&ntilde;o y desarrollo web</strong></td>
+                    <td>Sitio completo, responsivo, profesional</td>
+                    <td>&#8353;100,000</td>
+                </tr>
+                <tr>
+                    <td><strong>SEO Local</strong></td>
+                    <td>Optimizaci&oacute;n para Google en Liberia/Guanacaste</td>
+                    <td>&#8353;25,000</td>
+                </tr>
+                <tr>
+                    <td>Men&uacute; digital interactivo</td>
+                    <td>Categor&iacute;as, fotos, precios</td>
+                    <td class="included">Incluido &#10003;</td>
+                </tr>
+                <tr>
+                    <td>Bot&oacute;n WhatsApp</td>
+                    <td>Contacto directo desde el sitio</td>
+                    <td class="included">Incluido &#10003;</td>
+                </tr>
+                <tr>
+                    <td>Secci&oacute;n de ubicaci&oacute;n</td>
+                    <td>Mapa, horarios, direcci&oacute;n</td>
+                    <td class="included">Incluido &#10003;</td>
+                </tr>
+                <tr>
+                    <td>Galer&iacute;a de fotos</td>
+                    <td>Dise&ntilde;o visual atractivo</td>
+                    <td class="included">Incluido &#10003;</td>
+                </tr>
+                <tr>
+                    <td>Integraci&oacute;n redes sociales</td>
+                    <td>Instagram, Facebook, PedidosYa</td>
+                    <td class="included">Incluido &#10003;</td>
+                </tr>
+                <tr>
+                    <td>Formulario de contacto</td>
+                    <td>Eventos, catering, consultas</td>
+                    <td class="included">Incluido &#10003;</td>
+                </tr>
+                <tr>
+                    <td>Funciones adicionales</td>
+                    <td>A convenir seg&uacute;n necesidades</td>
+                    <td>Por cotizar</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="2"><strong>TOTAL (funciones base incluidas)</strong></td>
+                    <td><strong>&#8353;125,000</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">* Estoy completamente abierto a negociaci&oacute;n seg&uacute;n las necesidades y presupuesto de El Callejero.</p>
+
+        <!-- Closing -->
+        <div class="closing">
+            <h3 class="section-title">Pr&oacute;ximo paso</h3>
+            <p>
+                Me encantar&iacute;a que me hicieran saber si les agrada la propuesta o si necesitan algo m&aacute;s, ya sea por correo, WhatsApp o por videollamada para revisar juntos la demo, mostrarles lo que se ha construido y conversar sin ning&uacute;n compromiso. Estoy convencido de que con una presencia web profesional, El Callejero puede consolidarse como <strong>la referencia de street food gourmet en Guanacaste</strong>.
+            </p>
+        </div>
+
+        <!-- Signature -->
+        <div class="signature">
+            <p>Atentamente,</p>
+            <br>
+            <p class="name">Allan Leal Quintanilla</p>
+            <p>Desarrollador Web Freelance - Liberia, Guanacaste</p>
+            <p>allanleal65@gmail.com &bull; +506 8751 8055</p>
+        </div>
+    </div>
+</body>
+</html>
