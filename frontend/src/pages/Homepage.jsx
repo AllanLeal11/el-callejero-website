@@ -5,7 +5,6 @@ import MenuSection from '../components/MenuSection';
 import LocationSection from '../components/LocationSection';
 import SocialSection from '../components/SocialSection';
 import Footer from '../components/Footer';
-import FloatingButtons from '../components/FloatingButtons';
 
 const Homepage = () => {
   return (
@@ -16,7 +15,6 @@ const Homepage = () => {
       <LocationSection />
       <SocialSection />
       <Footer />
-      <FloatingButtons />
     </div>
   );
 };
